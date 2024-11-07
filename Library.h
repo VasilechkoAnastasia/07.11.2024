@@ -38,6 +38,14 @@ void Point<T>::Init(T a, T b)
 template<class T>
 void Point<T>::InitRandom()
 {
+	int min = 10;
+	int max = 99;
+	//interval ran bykv
+	int minChar = 65;
+	int maxChar = 90;
+	srand(time(0));
+	int ran = min + rand() % (max - min + 1);
+	int ranChar = minChar + rand() % (maxChar - minChar + 1);
 }
 template<class T>
 void Point<T>::Print()
